@@ -18,4 +18,10 @@ The process relies on a single deal workflow that checks for deals with associat
 
 - [Get Line Items](./actions/get-line-items.js)
 - [Delete Existing Dependent Line Items](./actions/delete-existing-line-items.js)
-- [ind & Add New Depending Line Items](./actions/find-and-add-dependent-line-items.js)
+- [Find & Add New Depending Line Items](./actions/find-and-add-dependent-line-items.js)
+
+### Considerations / Notes
+- Handling manual adjustments to line items.
+- Nested dependencies
+- Based on Search API limited to 3 base products SKUs. Could be expanded with graphQL.
+- Ensure enrollment always happens on line item change in case the amount doesn’t change.
