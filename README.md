@@ -15,3 +15,7 @@ If using product ids, they can be obtained from the API or from viewing the sour
  
 ### Workflow Setup
 The process relies on a single deal workflow that checks for deals with associated line items that have no dependent SKUs configured. The workflow can allow for re-enrollment when the deal amount changes. The workflow is split into three custom code workflow actions.
+
+- [Get Line Items](./actions/get-line-items.js)
+- [Delete Existing Dependent Line Items](./actions/delete-existing-line-items.js)
+- [ind & Add New Depending Line Items](./actions/find-and-add-dependent-line-items.js)
